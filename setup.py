@@ -8,4 +8,10 @@ setup(
     url='https://github.com/Amirsaeid254',  # URL to your project's homepage
     packages=find_packages(),             # Automatically find packages in your project
     python_requires='>=3.6',              # Minimum Python version required
+    install_requires=[
+        'cbftorch',
+        'torch>=1.9.0',
+        'attrdict',
+        'matplotlib',
+    ]
 )

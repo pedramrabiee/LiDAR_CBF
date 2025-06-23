@@ -1,9 +1,9 @@
-from hocbf_composition.barriers.barrier import Barrier
-from hocbf_composition.utils.utils import *
+from cbftorch import Barrier
+from cbftorch.utils import make_linear_alpha_function_form_list_of_coef, vectorize_tensors, softmax, softmin
 from LiDAR_CBF.utils.utils import *
 from LiDAR_CBF.utils.smooth_function_factory import create_smooth_function
 from LiDAR_CBF.utils.piecewise_function import DynamicPiecewiseFunction
-from hocbf_composition.utils.dynamics import AffineInControlDynamics
+from cbftorch.dynamics import AffineInControlDynamics
 
 
 

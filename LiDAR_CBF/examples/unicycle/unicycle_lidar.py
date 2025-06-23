@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import PillowWriter
 import os
 
-from hocbf_composition.utils.make_map import Map
-from hocbf_composition.safe_controls.closed_form_safe_control import MinIntervCFSafeControl
+from cbftorch.utils import Map, vectorize_tensors
+from cbftorch import MinIntervCFSafeControl
 
 from LiDAR_CBF.examples.unicycle.unicycle_dynamics import UnicycleDynamics
 from LiDAR_CBF.examples.unicycle.map_config import map_config
