@@ -1,12 +1,13 @@
-import torch
-from attrdict import AttrDict as AD
+from box import Box as AD
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib.animation import PillowWriter
 import os
 
-from cbftorch.utils import Map, vectorize_tensors
-from cbftorch import MinIntervCFSafeControl
+from cbftorch.utils.make_map import Map
+from cbftorch.utils.utils import vectorize_tensors
+from functools import partial
+from cbftorch.safe_controls.closed_form_safe_control import MinIntervCFSafeControl
 
 from LiDAR_CBF.examples.unicycle.unicycle_dynamics import UnicycleDynamics
 from LiDAR_CBF.examples.unicycle.map_config import map_config

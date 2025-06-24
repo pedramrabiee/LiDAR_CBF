@@ -1,9 +1,9 @@
-from cbftorch import Barrier
-from cbftorch.utils import make_linear_alpha_function_form_list_of_coef, vectorize_tensors, softmax, softmin
+from cbftorch.barriers.barrier import Barrier
+from cbftorch.utils.utils import make_linear_alpha_function_form_list_of_coef, softmax, softmin
 from LiDAR_CBF.utils.utils import *
 from LiDAR_CBF.utils.smooth_function_factory import create_smooth_function
 from LiDAR_CBF.utils.piecewise_function import DynamicPiecewiseFunction
-from cbftorch.dynamics import AffineInControlDynamics
+from cbftorch.utils.dynamics import AffineInControlDynamics
 
 
 
